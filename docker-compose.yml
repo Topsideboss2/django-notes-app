@@ -1,8 +1,7 @@
-version: "3"
+version: '3.9'
+
 services:
   web:
-    image: "notes-app" 
+    build: .
     ports:
       - "8000:8000"
-    environment:
-      NODE_ENV: production
